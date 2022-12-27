@@ -21,7 +21,7 @@ public class Main {
         {
             int[] arr = generateRandomArray();
             int spendingAmount = 0;
-            for (int i = 0; i < 30; i++) {
+            for (int i = 0; i < arr.length; i++) {
                 spendingAmount = spendingAmount + arr[i];
             }
             System.out.println("Сумма трат за месяц составила " + spendingAmount + "рублей");
@@ -48,10 +48,10 @@ public class Main {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
         float averageSpending = 0;
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < arr.length; i++) {
             averageSpending = averageSpending + arr[i];
         }
-        averageSpending = averageSpending / 30;
+        averageSpending = averageSpending / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + averageSpending + "рублей");
     }
 
